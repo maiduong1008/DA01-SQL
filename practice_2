@@ -1,0 +1,6 @@
+---buổi 5
+---1 mình muốn hỏi câu lệnh này có vấn đề gì mà không chạy được ạ
+SELECT DISTINCT CITY FROM STATION WHERE ID%2=0;
+SELECT DISTINCT CITY FROM STATION WHERE MOD(ID,2)=0;
+---2
+
