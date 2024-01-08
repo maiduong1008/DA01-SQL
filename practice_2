@@ -3,4 +3,9 @@
 SELECT DISTINCT CITY FROM STATION WHERE ID%2=0;
 SELECT DISTINCT CITY FROM STATION WHERE MOD(ID,2)=0;
 ---2
-
+SELECT COUNT(CITY) - COUNT(DISTINCT CITY) FROM STATION;
+---4 chuyển đổi interger to decimal dùng cast as
+SELECT
+round(cast (sum(item_count*order_occurrences)/sum(order_occurrences) as decimal),1) as mean
+from items_per_order
+---5
